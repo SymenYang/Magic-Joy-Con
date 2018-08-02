@@ -12,14 +12,18 @@ import Cocoa
 class MoveSpeedView : NSView {
     @IBOutlet weak var speedSlider: NSSlider!
     
-    var joyconData : joyconData!
+    var joyconData1 : joyconData!
+    var joyconData2 : joyconData!
     var name : String = "Move Speed: "
     var value : Double = 0.5
     
     @IBAction func sliderChanged(_ sender: NSSlider) {
         self.value = sender.doubleValue / sender.maxValue
-        if self.joyconData != nil {
-            self.joyconData.moveSpeed = self.value
+        if self.joyconData1 != nil {
+            self.joyconData1.moveSpeed = self.value
+        }
+        if self.joyconData2 != nil {
+            self.joyconData2.moveSpeed = self.value
         }
     }
     

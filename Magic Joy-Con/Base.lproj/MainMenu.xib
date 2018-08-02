@@ -16,15 +16,11 @@
             <connections>
                 <outlet property="StatusMenu" destination="4XE-TT-net" id="07f-1p-4Co"/>
                 <outlet property="moveSpeedItem" destination="3Xx-hQ-3Fm" id="pob-C9-kjS"/>
-                <outlet property="speedItem" destination="hBa-I8-sa9" id="3Tb-dX-mBW"/>
             </connections>
         </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <menu id="4XE-TT-net">
             <items>
-                <menuItem title="Speed Item" id="hBa-I8-sa9">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                </menuItem>
                 <menuItem isSeparatorItem="YES" id="WUz-tK-vmB"/>
                 <menuItem title="Quit Magic Joy-Con" id="Yzm-Jz-hTG">
                     <modifierMask key="keyEquivalentModifierMask"/>

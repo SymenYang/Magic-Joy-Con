@@ -3,10 +3,13 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "AppDelegate.startListen(device:):AppDelegate.swift">
+         contextName = "closure #15 in joyconData.defaultOptionRight():JoyConClass.swift">
+      </ContextState>
+      <ContextState
+         contextName = "joyconCommunication.__encodeAmp(Amp:):JoyConClass.swift">
          <PersistentStrings>
             <PersistentString
-               value = "CFRunLoopGetCurrent()">
+               value = "(UInt16(log2(amp * 1000) * 32) - 0x60) * 2 - 0xf6">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -15,6 +18,22 @@
          <PersistentStrings>
             <PersistentString
                value = "self.statusItem">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AppDelegate.startListen(device:):AppDelegate.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "CFRunLoopGetCurrent()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "joyconCommunication.basicTest(device:on:):JoyConClass.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.rumbleSend(device,313,0,0,0)">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

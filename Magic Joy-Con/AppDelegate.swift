@@ -54,7 +54,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var moveSpeedItem: MoveSpeedView!
     
     
-    var threadPool : [Thread?] = [nil,nil]//left,right
+    var threadPool : [Thread?] = [nil,nil]//[left,right]
     let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
     
     @objc func startListen(device : IOHIDDevice) {//device
@@ -174,9 +174,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         icon?.isTemplate = true
         self.statusItem.image = icon
         self.statusItem.menu = statusMenu
-        let speedItem = self.statusMenu.item(withTitle: "Speed Item")
-        speedItem?.view = self.moveSpeedItem
-        self.moveSpeedItem.joyconData = DataRight
+        //let speedItem = self.statusMenu.item(withTitle: "Speed Item")
+        //speedItem?.view = self.moveSpeedItem
+        //self.moveSpeedItem.joyconData1 = DataRight
         
         IOHIDManagerSetDeviceMatchingMultiple(manager, multiple)
         IOHIDManagerRegisterDeviceMatchingCallback(manager, matchingCallback,nil)
@@ -186,7 +186,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         IOHIDManagerOpen(manager, IOOptionBits(kIOHIDOptionsTypeNone))
         
         CFRunLoopRun()
-        
     }
     
     func applicationWillTerminate(_ aNotification: Notification) {

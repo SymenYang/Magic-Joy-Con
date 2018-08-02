@@ -10,11 +10,13 @@
 		AD6B83E1207DAC4F006B3C5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6B83E0207DAC4F006B3C5E /* AppDelegate.swift */; };
 		AD6B83E3207DAC51006B3C5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD6B83E2207DAC51006B3C5E /* Assets.xcassets */; };
 		AD6B83E6207DAC51006B3C5E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD6B83E4207DAC51006B3C5E /* MainMenu.xib */; };
-		AD6B83F1207DACB1006B3C5E /* JoyConClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6B83F0207DACB1006B3C5E /* JoyConClass.swift */; };
+		AD6B83F1207DACB1006B3C5E /* JoyConData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6B83F0207DACB1006B3C5E /* JoyConData.swift */; };
 		AD6B83F3207DAFBE006B3C5E /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6B83F2207DAFBE006B3C5E /* StatusMenuController.swift */; };
 		AD6B83F5207DEBA0006B3C5E /* MacOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6B83F4207DEBA0006B3C5E /* MacOperator.swift */; };
 		AD6B83F9207DFB8B006B3C5E /* MoveSpeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6B83F8207DFB8B006B3C5E /* MoveSpeedView.swift */; };
 		AD6B8401207E4CCF006B3C5E /* keyCodeTable.txt in Resources */ = {isa = PBXBuildFile; fileRef = AD6B8400207E4CCE006B3C5E /* keyCodeTable.txt */; };
+		AD6B84042087561E006B3C5E /* VibrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6B84032087561D006B3C5E /* VibrationController.swift */; };
+		AD7DB569209EDDD6003AE0D6 /* JoyConConmunication.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7DB568209EDDD6003AE0D6 /* JoyConConmunication.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,12 +26,14 @@
 		AD6B83E5207DAC51006B3C5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		AD6B83E7207DAC51006B3C5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD6B83E8207DAC51006B3C5E /* Magic_Joy_Con.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Magic_Joy_Con.entitlements; sourceTree = "<group>"; };
-		AD6B83F0207DACB1006B3C5E /* JoyConClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JoyConClass.swift; path = "../../Joy-Con Controller/Joy-Con Controller/JoyConClass.swift"; sourceTree = "<group>"; };
+		AD6B83F0207DACB1006B3C5E /* JoyConData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JoyConData.swift; path = "../../Joy-Con Controller/Joy-Con Controller/JoyConData.swift"; sourceTree = "<group>"; };
 		AD6B83F2207DAFBE006B3C5E /* StatusMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
 		AD6B83F4207DEBA0006B3C5E /* MacOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacOperator.swift; sourceTree = "<group>"; };
 		AD6B83F8207DFB8B006B3C5E /* MoveSpeedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveSpeedView.swift; sourceTree = "<group>"; };
 		AD6B8400207E4CCE006B3C5E /* keyCodeTable.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = keyCodeTable.txt; sourceTree = "<group>"; };
 		AD6B8402207F6B71006B3C5E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		AD6B84032087561D006B3C5E /* VibrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibrationController.swift; sourceTree = "<group>"; };
+		AD7DB568209EDDD6003AE0D6 /* JoyConConmunication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoyConConmunication.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +69,7 @@
 			children = (
 				AD6B8400207E4CCE006B3C5E /* keyCodeTable.txt */,
 				AD6B83F8207DFB8B006B3C5E /* MoveSpeedView.swift */,
-				AD6B83F0207DACB1006B3C5E /* JoyConClass.swift */,
+				AD6B83F0207DACB1006B3C5E /* JoyConData.swift */,
 				AD6B83E0207DAC4F006B3C5E /* AppDelegate.swift */,
 				AD6B83E2207DAC51006B3C5E /* Assets.xcassets */,
 				AD6B83E4207DAC51006B3C5E /* MainMenu.xib */,
@@ -73,6 +77,8 @@
 				AD6B83E8207DAC51006B3C5E /* Magic_Joy_Con.entitlements */,
 				AD6B83F2207DAFBE006B3C5E /* StatusMenuController.swift */,
 				AD6B83F4207DEBA0006B3C5E /* MacOperator.swift */,
+				AD6B84032087561D006B3C5E /* VibrationController.swift */,
+				AD7DB568209EDDD6003AE0D6 /* JoyConConmunication.swift */,
 			);
 			path = "Magic Joy-Con";
 			sourceTree = "<group>";
@@ -153,11 +159,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD6B84042087561E006B3C5E /* VibrationController.swift in Sources */,
 				AD6B83F3207DAFBE006B3C5E /* StatusMenuController.swift in Sources */,
 				AD6B83F5207DEBA0006B3C5E /* MacOperator.swift in Sources */,
-				AD6B83F1207DACB1006B3C5E /* JoyConClass.swift in Sources */,
+				AD6B83F1207DACB1006B3C5E /* JoyConData.swift in Sources */,
 				AD6B83F9207DFB8B006B3C5E /* MoveSpeedView.swift in Sources */,
 				AD6B83E1207DAC4F006B3C5E /* AppDelegate.swift in Sources */,
+				AD7DB569209EDDD6003AE0D6 /* JoyConConmunication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

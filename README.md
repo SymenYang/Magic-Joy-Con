@@ -1,6 +1,8 @@
 #  Magic Joy-Con
 ## Introduction
 #### With Magic Joy-Con you can control your mac by it's joystick,buttons,and motion.Also you can customize the control profile by editing code.
+## What's new
+#### Added vibration control, you can control the vibration action by designed API.
 ---
 ## Usage
 #### Run Magic Joy-Con.app
@@ -55,6 +57,13 @@
 ### Customize joystick and motion data
 #### Register LstickAction,RstickAction,accGyroAction to deal those data.
 ### Some basic actions are written in MacOperator.swift. Check the code for using them.
+### Customize vibration
+#### Use the class **VibrationController.addVibration** to add vibration message. And the function will automatically encode the message, send to Joy-Con, exec the message.
+#### The function's defination is as below:
+    func addVibration(startTimeFromNow : Double,duration : Double,highFreq : Double,highAmp : Double,LowFreq : Double,lowAmp : Double,lock : Bool = false) -> Bool
+#### **lock** means this vibration message will not be interrupted by other messages
+#### The meanings of highFreq,lowFreq,highAmp,lowAmp please check this github site [Nintendo_Switch_Reverse_Engineering](https://github.com/dekuNukem/Nintendo_Switch_Reverse_Engineering/) 
+---
 ## Default config
 #### Hold ZR and wave Joy-Con to move mouse.
 #### Move right joystick(fast mode) or left joystick(slow mode) can move mouse too.
@@ -64,6 +73,7 @@
 #### Press *L_SR* or *L_SL* as press command  + ',' or '.'(In my mac is to switch desktops).
 #### Arrow keys are mapping to the arrow key in Mac.Others are not mapped.
 #### Can change the move speed in status bar menu.This will change the *movespeed* in class joyconData.Check the code for more details.
+---
 ## Thanks
 #### [Nintendo_Switch_Reverse_Engineering](https://github.com/dekuNukem/Nintendo_Switch_Reverse_Engineering/)
 #### [switch_joy_con_as_mouse_for_macos](https://github.com/mnogu/switch_joy_con_as_mouse_for_macos)

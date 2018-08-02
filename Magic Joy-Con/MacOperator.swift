@@ -35,6 +35,9 @@ class macOperation : NSObject,NSUserNotificationCenterDelegate{
         CGWarpMouseCursorPosition(CGPoint(x: Double(point.x) + dx, y: Double(point.y) + dy))
     }
     
+    var lastLeftDownTime = 0.0
+    var doubleClickEpsTime = 0.5
+    
     func downMouseLeft () {
         let event = self.getEvent()
         let mouseDown = CGEvent(mouseEventSource: nil,
@@ -67,6 +70,9 @@ class macOperation : NSObject,NSUserNotificationCenterDelegate{
     }
     
     func dragMouseRight(dx : Double,dy : Double) {
+        if fabs(dx) <= 1 && fabs(dy) <= 1 {
+            return
+        }
         let event = self.getEvent()
         let point = event!.location
         let mouseDrag = CGEvent(mouseEventSource: nil,
